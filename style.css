@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: lightyellow;
+    padding: 0 1rem 0 1rem;
+    font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+    font-family: 'Mrs Saint Delafield', cursive;
+    color: black;
+    margin: 0;
+}
+h2, h3, h4 {
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+ol {
+    list-style-type: none;
+}
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 0.08fr 1fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "leaf-div1 branch leaf-div2 header"
+    "leaf-div3 branch leaf-div4 main"
+    "leaf-div5 branch leaf-div6 main"
+    "leaf-div7 branch leaf-div8 main"
+    "leaf-div9 branch leaf-div10 main"
+    "leaf-div11 branch leaf-div12 main"
+    "leaf-div13 branch leaf-div14 main"
+    "leaf-div15 branch leaf-div16 main"
+    "leaf-div17 branch leaf-div18 main";
+}
+.top {
+    margin-top: 1rem;
+}
+.bottom {
+    margin-bottom: 1rem;
+}
+/* LEAVES SIDEBAR AREA */
+
+.branch {
+    grid-area: branch;
+    background-color: darkgreen;
+    height: 100%;
+}
+.leaf-left {
+    border-radius: 0 20rem 0 20rem;
+}
+.leaf-right {
+    border-radius: 20rem 0 20rem 0;
+}
+.leaf {
+    width: 100%;
+    height: width;
+    position: relative;
+}
+.pointer {
+    cursor: pointer;
+}
+.leaf-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bolder;
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+
+}
+.leaf-div1 {
+    background-image: url(./images/leaf1.jpg);
+}
+.leaf-div2 {
+    background-image: url(./images/leaf2.jpg);   
+}
+.leaf-div3 {
+    background-image: url(./images/leaf3.jpg);
+}
+.leaf-div4 {
+    background-image: url(./images/leaf4.jpg);
+}
+.leaf-div5 {
+    background-image: url(./images/leaf5.jpg);
+}
+.leaf-div6 {
+    background-image: url(./images/leaf6.jpg);
+}
+.leaf-div7 {
+    background-image: url(./images/leaf7.jpg);
+}
+.leaf-div8 {
+    background-image: url(./images/leaf8.jpg);
+}
+.leaf-div9 {
+    background-image: url(./images/leaf1.jpg);
+}
+.leaf-div10{
+    background-image: url(./images/leaf2.jpg);   
+}
+.leaf-div11 {
+    background-image: url(./images/leaf3.jpg);
+}
+.leaf-div12 {
+    background-image: url(./images/leaf4.jpg);
+}
+.leaf-div13 {
+    background-image: url(./images/leaf5.jpg);
+}
+.leaf-div14 {
+    background-image: url(./images/leaf6.jpg);
+}
+.leaf-div15 {
+    background-image: url(./images/leaf7.jpg);
+}
+.leaf-div16 {
+    background-image: url(./images/leaf8.jpg);
+}
+.img {
+    visibility: hidden;
+    width: 100%;
+}
+.extra-leaf {
+    display: none;
+}
+/* HEADER AREA */
+
+.header {
+    grid-area: header;
+    margin: 0 0 0 2rem;
+    justify-content: space-between;
+    align-items: baseline;
+    color: darkgreen;
+    padding-bottom: 1rem;
+}
+
+.header-img {
+    height: 3.5rem;
+    border-radius: 5rem;
+}
+.header-img-div {
+    height: 4.38rem;
+    width: 4.38rem;
+    background-color: darkgreen;
+    cursor: pointer;
+}
+.icon {
+    margin: 0.3rem;
+    cursor: pointer;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-header-div {
+    display: none;
+}
+
+.mobile-menu-container {
+    display: none;
+}
+
+/* MAIN AREA */
+
+main {
+    grid-area: main;
+}
+
+main > div {
+    display: none;
+}
+
+.textdiv {
+    margin: 0 2rem 2rem 2rem;
+    max-width: 50rem;
+}
+
+.youtube {
+    margin-top: 1.5rem;
+}
+.show-textdiv {
+    display: flex;
+}
+
+.hiromi-img {
+    margin-top: 1rem;
+    width: 50%;
+    max-width: 20rem; 
+    box-shadow: rgba(0, 0, 0, 0.3) 1rem 1rem 2rem;
+}
+
+.veg-img {
+    margin: 1rem;
+    width: 50%;
+    max-width: 30rem; 
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 1rem 1rem 2rem;
+}
+
+.coding-list {
+    list-style-type: square;
+}
+
+
+/* CONTACT FORM */
+
+.contact {
+
+    max-width: 40rem;
+    padding: 0 3rem 0 0;
+}
+.input {
+    width: 100%;
+    padding: 0.5rem;
+}
+.input > * {
+    width: 100%;
+}
+.message-input {
+    height: 8rem;
+}
+
+.submit-button {
+    width: 10rem;
+    height: 2rem;
+    background-color: darkgreen;
+    color: lightyellow;
+}
+
+/* REUSABLE CLASSES */
+
+.flex {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+.center {
+    justify-content: center;
+}
+.rounded {
+    border-radius: 0.5rem;
+}
+.transparent {
+    opacity: 0.8;
+}
+.cover {
+    background-size: cover;
+}

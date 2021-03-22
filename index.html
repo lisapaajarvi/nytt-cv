@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tablet-large.css" media="(max-width: 1024px)">
+    <link rel="stylesheet" href="./tablet-small.css" media="(max-width: 800px)">    
+    <link rel="stylesheet" href="./mobile.css" media="(max-width: 600px)">
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/5fe505aff9.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <div class = "mobile-menu-container" id="mobile-menu">
+        <div class= "leaf-div1 top leaf-left leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">utbildning</p>
+        </div>
+        <div class= branch>            
+        </div>
+        <div class= "leaf-div2 top leaf-right leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">erfarenhet</p>
+        </div>
+        <div class= "leaf-div3 leaf-left leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">musik</p>
+        </div>
+        <div class= "leaf-div4 leaf-right leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">webb</p>
+        </div>
+        <div class= "leaf-div5 leaf-left leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">japanska</p>
+        </div>
+        <div class= "leaf-div6 leaf-right leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">odling</p>
+        </div>
+        <div class= "leaf-div7 leaf-left leaf cover transparent pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">kontakt</p>
+        </div>
+        <div class= "leaf-div8 leaf-right leaf cover transparent">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+    </div>
+    <div class="container">
+        <div class="header flex align-center">
+                <div class="mobile-header-div icon align-center center rounded" id="about-mobile-icon">
+                    <img src="./images/lisa-solros.jpg" alt="Lisa with sunflower" class="header-img"> 
+                </div>
+                <div class=title>
+                    <h1>Lisa Pääjärvi</h1>
+                </div>
+                <div class="mobile-menu-icon">
+                    <i class="fas fa-bars fa-4x mobile-menu-icon"></i>
+                </div>
+                <div class="header-icons flex align-center">
+                    <div class="header-img-div icon flex align-center center rounded" id="about-icon">
+                        <img src="./images/lisa-solros.jpg" alt="Lisa with sunflower" class="header-img"> 
+                    </div>
+                    <a href="https://github.com/lisapaajarvi" target="_blank"><i class="fab fa-github-square fa-5x icon"></i></a>
+                    <i class="fas fa-envelope-square fa-5x icon" id="contact-icon"></i>
+                </div>
+        </div>
+
+
+
+<!-- MAIN AREA WITH TEXTDIVS-->
+
+        <main>
+            <div class= "textdiv about column show-textdiv" id="about">
+                <h3>Om Lisa</h3>
+                <br>
+                <p>Jag är en kreativ mångsysslare som gillar utmaningar och problemlösning. Kodare, odlare, sångerska, översättare, lärare, vegan, miljövän. 
+                </p> 
+
+                <p>Född och uppvuxen i byn Siekasjärvi med 20 invånare, har bott i mångmiljonstaden Tokyo, men numera hemmastadd i Göteborg. 
+                </p>
+
+                <p class="hide-on-mobile">Klicka på bladen till vänster för att läsa mer!</p>
+            </div>
+            <div class= "textdiv contact column" id="contact">
+                <h3>Kontakta mig</h3>
+                <form action="mailto:lisa.paajarvi@medieinstitutet.se" method="post" enctype="text/plain" class="flex column contact-form">
+                    <div class="flex">
+                        <div class="input">
+                            <p>Namn</p>
+                            <label for="name"></label>
+                            <input class="rounded" type="text" name="name" id="name" required>
+                        </div>
+    
+                        <div class="input">
+                            <p>E-post</p>
+                            <label for="email"></label>
+                            <input class="rounded" type="email" name="email" id="email" required>
+                        </div>
+                    </div>  
+                    <div class="input">
+                        <p>Meddelande</p>
+                        <label for="message"></label>
+                        <textarea class="message-input rounded" type="text" name="message" id="message" required></textarea>
+                    </div>
+                    
+                    <div class="input flex center align-center">
+                        <label for="submit"></label>
+                        <button class="submit-button rounded" type="submit" name="submit" id="submit">Skicka in</button>
+                    </div>
+                </form>
+            </div>
+            <div class= "textdiv education column" id="education">
+                <h3>Utbildning</h3>
+                <ol> 
+                    <li>
+                        <h4>2020 sep-</h4>
+                        <p>Front-end developer, YH-utbildning, Medieinstitutet.</p>
+                    </li>
+                    <li>
+                        <h4>2019 okt - 2020 sep</h4>
+                        <p>Småskalig ekologisk odling, Folkhögskolekurs 50%, Färnebo folkhögskola.</p>
+                    </li>
+                    <li>
+                        <h4>2013 aug - 2018 jan</h4>
+                        <p>Doktorandutbildning i japanska, Institutionen för Språk och litteraturer, Göteborgs universitet.</p>
+                    </li>
+                    <li>
+                        <h4>2011 dec</h4>
+                        <p>Magisterexamen i japanska, Göteborgs universitet.</p>
+                    </li>
+                    <li>
+                        <h4>2007 okt - 2009 mar</h4>
+                        <p>Studier i det japanska språket och litteraturen vid Tokyo Gakugei University i Japan, med stipendium från
+                        japanska staten.</p>
+                    </li>
+                    <li>
+                        <h4>2002 jan - 2007 jun</h4>
+                        <p>Fristående kurser vid Göteborgs universitet. Kurser i japanska upp till magisternivå, samt andra kurser i litteraturvetenskap, allmän språkvetenskap och engelska.
+                        Utbytestermin i Tokyo våren 2003, kandidatexamen i japanska 2006.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>2000 jun</h4>
+                        <p>Gymnasieexamen, Naturvetenskapligt program, Gränsälsgymnasiet, Övertorneå.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class= "textdiv work column" id="work">
+                <h3>Arbetslivserfarenhet</h3>
+                <ol>
+                    <li>
+                        <h4>2018 okt - </h4>
+                        <p> Vikariat och extraarbete som butikssäljare på <a href="https://www.pocketshop.se/" target="_blank">Pocket shop</a> i Göteborg (Centralstationen och Kungsportsplatsen) och på Landvetter flygplats.
+                            Varierande omfattning. Arbetsuppgifterna består framförallt av aktiv försäljning och kundkontakt, men även skyltning och beställning m.m. 
+                        </p>
+                    </li>
+                    <li>
+                        <h4>2020 apr - </h4>
+                        <p>Privatlärare i matematik och svenska genom <a href="https://www.allakando.se/" target="_blank">Allakando</a>, i första hand för gymnasielever och studenter som 
+                        behöver hjälp för att förbereda sig för högskoleprovet. Varierande omfattning.    
+                        </p>
+                    </li>
+                    <li>
+                        <h4>2013 aug - 2019 jan</h4>
+                        <p>Doktorandtjänst inom ämnet japanska vid Göteborgs universitet. Forskning och undervisning i det japanska språket, 
+                            japansk litteratur och översättning.</p>                            
+                    </li>
+                    <li>
+                        <h4>2010 aug - 2013 jun</h4>
+                        <p>Gymnasielärare i japanska på <a href="https://www.pederskrivaresskola.se/" target="_blank">Peder Skrivares skola</a>, Varberg. 
+                            Halvtidstjänst med undervisning i japanska steg 1 och steg 2. I tjänsten ingick alla vanligt förekommande arbetsuppgifter för lärare, 
+                            såsom lektionsplanering, utveckling av kursmaterial, prov, betygsättning med mera. 
+                        </p>
+                    </li>
+                    <li>
+                        <h4>2010 jun - 2013 jun</h4>
+                        <p>Timlärare i japanska, Göteborgs universitet. Undervisning i japanska på olika nivåer, 
+                            från grundkurs till kandidatnivå. Omfattning på 
+                            tjänsten varierade från termin till termin, 15-40% av heltid.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>2007 dec - 2009 mar</h4>
+                        <p>Timlärare i engelska, International English Academy, Tokyo. 
+                            Extraarbete som konversationslärare i engelska på en språkskola några 
+                            timmar i veckan, med undervisning för alla åldrar från förskola (6-åringar)
+                            till gymnasieelever och äldre.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <div class="textdiv music column" id="music">
+                <h3>Vokaltrion titania</h3>
+                <p>Våren 2018 var jag med och startade <a href="http://www.titania.nu" target=_blank>titania</a>, en semi-professionell vokaltrio 
+                    som både anordnar egna konserter och blir anlitade till olika typer av evenemang.</p>
+                <p>Under 2020 har vi (trots Corona) till exempel sjungit för besökare på Jonsereds trädgårdars Må bra-dag, sjungit på gudstjänster i flera kyrkor i Göteborgstrakten, 
+                    medverkat i ett nyskrivet Requiem på Atalante och spelat in en julskiva som släpptes på Spotify i november.</p>
+                <div class="flex center youtube">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gdJQh50oZKA" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                    
+            </div>
+            <div class="textdiv coding column" id="coding">
+                <h3>Webbutveckling</h3>
+                <p>Från hösten 2020 och fram till våren 2022 läser jag en YH-utbildning till Front-end developer på Medieinstitutet i Göteborg, där jag framförallt jobbar 
+                   med HTML, CSS och Javascript. För närvarande håller jag på att sätta mig in i React och Material UI. </p>
+                
+                <p>Några av mina projekt:</p>
+                
+                <ul class="coding-list">
+                    <li><a href="https://dagensdikt.netlify.app/" target=_blank>"Dagens dikt"</a> -  ett kort skolprojekt som var mitt första projekt med React och Create React App. Hämtar dikter från ett API, 
+                        använder tema, och har funktionalitet för att spara favoriter.</li>
+                    <li><a href="https://skolprojekt-hoppspel.netlify.app/" target=_blank>"Cyberjump"</a> - slutprojekt i kursen Javascript 1, ett klassiskt plattformsspel med p5.js. Spring, hoppa och skjut monster i en retropixlig postapokalyptisk värld. Ej mobilanpassad.</li>
+                    <li><a href="https://quiz-gissa-talet.netlify.app/" target=_blank>"Gissa talet"</a> - en quiz-app från kursen Agila metoder. Gissa på ett tal mellan 1 och 20, och tävla med botar av olika svårighetsgrad. </li>
+                    <li><a href="https://lisapaajarvi.github.io/guinea-pig-calendar/" target=_blank>"The Fluffy Guinea Pig Calendar"</a> - en enkel kalender i vanilla javascript med helgdagar från API, en att göra-lista och marsvinstema.
+                </ul>   
+                <p>Titta gärna in på min <a href="https://github.com/lisapaajarvi" target="_blank">GitHub</a> för att se mer av min kod.</p>
+                <p>Jag är också webmaster för hemsidan för vokaltrion <a href="http://www.titania.nu" target=_blank>titania</a>, som jag sjunger i. Sidan är konstruerad i WordPress, 
+                    men håller på att omarbetas för att flyttas därifrån.</p>
+            </div>
+            <div class="textdiv japanese column" id="japanese">
+                <h3>Japanska</h3>
+                <p>Det japanska språket och den japanska litteraturen är två ämnen som ligger mig varmt om hjärtat. Jag har studerat japanska upp till 
+                    doktorandnivå på Göteborgs universitet, med inriktning på översättningar av japansk litteratur till svenska, och jag har också bott och studerat i Tokyo 
+                under sammanlagt ett par år.</p>
+
+                <p>2016 debuterade jag som översättare med <a href="https://www.wwd.se/bocker/204508/gratulerar-till-din-forgorelse/" target=_blank>Gratulerar till din förgörelse</a>, en samling med 
+                    dikter av den japanska feministiska poeten Hiromi Ito som jag har översatt till svenska tillsammans med Johanne Lykke Holm. Boken finns utgiven på Wahlström & Widstrands förlag</p>
+                <div class="flex center">
+                    <img src="images/hiromiito.jpg" alt="bokomslag Hiromi Ito" class="hiromi-img">
+                </div>
+            </div>
+            <div class= "textdiv farming column" id="farming">
+                <h3>Odling</h3>
+                <p>Jag har odlat grönsaker på balkong och kolonilott under många år, men hösten 2019 tog jag steget till en odling i större 
+                    skala genom att ta över ett jordbruksarrende på 500 kvm i Skogome. Sommaren 2021 kommer det att finnas grönsaker 
+                    härifrån till försäljning, odlade med omtanke och utan gifter.</p>
+
+                <div class="flex center">
+                    <img src="images/veggies.jpg" alt="vegetables" class="veg-img">
+                </div>
+                <p>Mer information om odlingen finns på instagramkontot <a href="https://www.instagram.com/bladochbaljor/" target=_blank>blad och baljor.</a></p>
+            </div>
+
+        </main>
+
+<!--SIDEBAR/MENU AREA WITH LEAF SHAPED DIVS-->    
+
+        <div class= "leaf-div1 top leaf-left leaf cover transparent hide-on-mobile pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">utbildning</p>
+        </div>
+        <div class= "branch hide-on-mobile">            
+        </div>
+        <div class= "leaf-div2 top leaf-right leaf cover transparent hide-on-mobile pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">erfarenhet</p>
+        </div>
+        <div class= "leaf-div3 leaf-left leaf cover transparent hide-on-mobile pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">musik</p>
+        </div>
+        <div class= "leaf-div4 leaf-right leaf cover transparent hide-on-mobile pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">webb</p>
+        </div>
+        <div class= "leaf-div5 leaf-left leaf cover transparent hide-on-mobile pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">japanska</p>
+        </div>
+        <div class= "leaf-div6 leaf-right leaf cover transparent hide-on-mobile pointer">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p class="leaf-text">odling</p>
+        </div>
+        <div class= "leaf-div7 leaf-left leaf cover transparent hide-on-mobile">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+        <div class= "leaf-div8 leaf-right leaf cover transparent hide-on-mobile">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+        <div class= "leaf-div9 leaf-left leaf cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p></p>
+        </div>
+        <div class= "leaf-div10 leaf-right leaf cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+        <div class= "leaf-div11 leaf-left leaf cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p></p>
+        </div>
+        <div class= "leaf-div12 leaf-right leaf cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+        <div class= "leaf-div13 leaf-left leaf cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+            <p></p>
+        </div>
+        <div class= "leaf-div14 leaf-right leaf cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+        <div class= "leaf-div15 leaf-left leaf bottom cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+        <div class= "leaf-div16 leaf-right leaf bottom cover transparent extra-leaf">
+            <img src="./images/white-square.jpg" alt="" class= "img">
+        </div>
+    </div>
+    
+</body>
+</html>

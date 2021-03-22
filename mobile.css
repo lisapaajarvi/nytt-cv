@@ -1,0 +1,68 @@
+body {
+    padding: 0 0.5rem 0 0.5rem;
+}
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "main main";
+}
+.header {
+    flex-direction: row;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+.extra-leaf {
+    display: none;
+}
+.spotify {
+    display: none;
+}
+h1 {
+    margin: 0;
+}
+
+.mobile-header-div {
+    display: flex;
+    height: 4.38rem;
+    width: 4.38rem;
+    background-color: darkgreen;
+    cursor: pointer;
+}
+.mobile-menu-icon {
+    display: flex;
+    cursor: pointer;
+}
+.header-icons {
+    display: none;
+}
+.textdiv {
+    padding: 1rem;
+}
+.hide-on-mobile {
+    display: none;
+}
+.mobile-menu-container {
+    display: grid;
+    background-color: lightyellow;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: -40rem;
+    height: 100%;
+    width: 90%;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "leaf-div1 branch leaf-div2"
+    "leaf-div3 branch leaf-div4"
+    "leaf-div5 branch leaf-div6"
+    "leaf-div7 branch leaf-div8"
+}
+
